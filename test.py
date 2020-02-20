@@ -1,3 +1,4 @@
 import time
-a=3
-print(a)
+import requests
+requests.get()
+print()
