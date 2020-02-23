@@ -21,7 +21,7 @@ def read_json():
     return data
 
 class Interface(unittest.TestCase):
-    def test_face(self):
+    def test_face_01(self):
         url="https://www.baidu.com"
         data={                      
             "username":"111",
@@ -58,7 +58,7 @@ if __name__ == "__main__":
     生成测试报告
     '''
     with open(file_path,"wb") as f:
-        runner=HTMLTestRunner.HTMLTestRunner(stream=f,title="这是测试标题",description="这个是啥")
+        runner=HTMLTestRunner.HTMLTestRunner(stream=f,title="这是测试标题",description="这个是说明")
         runner.run(suite)
     f.close()
     
