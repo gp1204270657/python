@@ -17,7 +17,7 @@ class HandelExcel:
         '''
         加载excle
         '''
-        open_excel=openpyxl.load_workbook(base_path+"/Case/imooc.xlsx")
+        open_excel=openpyxl.load_workbook(r"C:\Users\peng.gao1\Desktop\IM及短信推送用例.xlsx")
         return open_excel
     
     def get_sheet_data(self,index=None):
@@ -25,9 +25,11 @@ class HandelExcel:
         加载所有的sheet内容，拿到需要的sheet页
         '''
         sheet_name=self.load_excel().sheetnames
+        
         if index==None:
             index=0
         data=self.load_excel()[sheet_name[index]]
+        # data=sheet_name[index]
         return data
     
     def get_cell_value(self,row,cols):
@@ -55,9 +57,7 @@ class HandelExcel:
 
 excel_data=HandelExcel()
 
-# if __name__ == "__main__":
-#     handle_excel=HandelExcel()
-#     for i in range(1,6):
-#         print(handle_excel.get_row_value(i))
+if __name__ == "__main__":
+    print(excel_data.get_row_value(4))
 
     
