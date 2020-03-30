@@ -9,7 +9,7 @@ from Util.handle_json import get_value
 
 
 def handle_result(url,code):
-    date=get_value(url,"/Config/code_message.json")
+    date=get_value(url,"/python/Config/code_message.json")
     if date!=None:
         for i in date:
             message=i.get(str(code))

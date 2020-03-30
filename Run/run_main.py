@@ -3,7 +3,7 @@ import sys,os
 import openpyxl
 import unittest
 base_path=os.getcwd()
-sys.path.append(base_path)
+sys.path.append(base_path+'\python')
 from Util.handle_excel import excel_data
 from Base.base_requests import request
 from Util.handle_result import handle_result

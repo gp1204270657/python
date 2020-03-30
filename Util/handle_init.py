@@ -15,7 +15,7 @@ sys.path.append(base_path)
 class HandleInit:
 
     def load_init(self):
-        file_path=base_path+"/Config/server.ini"
+        file_path=base_path+"/python/Config/server.ini"
         #读取配置文件的对象
         cf=configparser.ConfigParser()
         cf.read(file_path)
@@ -27,9 +27,11 @@ class HandleInit:
         '''
         cf=self.load_init()
         data=cf.get(section,key)
+        print(data)
         return data
 handle_ini=HandleInit()
-
+# if __name__ == "__main__":
+#     handle_ini.get_value("server","host")
     
 
 
