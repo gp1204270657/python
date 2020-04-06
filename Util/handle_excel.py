@@ -17,7 +17,7 @@ class HandelExcel:
         '''
         加载excle
         '''
-        open_excel=openpyxl.load_workbook(r"C:\Users\peng.gao1\Desktop\IM及短信推送用例.xlsx")
+        open_excel=openpyxl.load_workbook(base_path+"/Case/imooc.xlsx")
         return open_excel
     
     def get_sheet_data(self,index=None):
@@ -54,6 +54,10 @@ class HandelExcel:
         for i in self.get_sheet_data()[row]:
             row_list.append(i.value)
         return row_list
+
+    def excel_write_Data(self):
+        '''写入数据'''
+        
 
 excel_data=HandelExcel()
 
