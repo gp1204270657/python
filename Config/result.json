@@ -1,0 +1,13 @@
+{
+    "api/beta4":[
+        {
+        "succes":{
+            "id":"10086",
+            "name":"张三"
+        }},
+        {"error":{
+            "errorCode":"10067",
+            "errormesage":"密码错误"
+             }     }
+        ]
+}

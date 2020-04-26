@@ -55,9 +55,22 @@ class HandelExcel:
             row_list.append(i.value)
         return row_list
 
+    def excel_write_Data(self,row,clos,valus):
+        '''写入数据'''
+        wb=self.load_excel()
+        #激活文件
+        wr=wb.active
+        #写进文件的位置
+        wr.cell(row,clos,valus)
+        wb.save(base_path+"/Case/imooc.xlsx")
+
+
 excel_data=HandelExcel()
 
-# if __name__ == "__main__":
+if __name__ == "__main__":
     # print(excel_data.get_row_value(4))
+    print(excel_data.excel_write_Data(7,2,"tongguo"))
+    # print(excel_data.get_cell_value(2,3))
+    # print(rest)
 
     
