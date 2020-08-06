@@ -1,0 +1,37 @@
+/*id选择器*/
+#name1{
+    color: green;
+}
+#name2{
+    color: red;
+}
+
+/*星号选择器*/
+*{
+    background-color: yellow;
+    font-size: 30px;
+}
+
+/*逗号选择器*/
+#name1,p{
+    color: #000;
+}
+/*子孙选择器*/
+#name p{
+
+}
+
+/*子选择器*/
+#name>p{
+
+}
+
+/*同级选择器*/
+#name+p{
+
+}
+
+/*属性选择器*/
+p[class=p1]{
+
+}

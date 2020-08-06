@@ -1,0 +1,15 @@
+h1{
+    color: red;
+    text-align: center;
+}
+.p1{
+    text-indent: 2em;
+    text-decoration: underline;
+}
+.p2{
+    text-indent: 2em;
+    letter-spacing: 5px;
+}
+.p3{
+     text-indent: 2em;
+}

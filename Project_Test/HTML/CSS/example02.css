@@ -1,0 +1,15 @@
+*{
+    font-family: 微软雅黑;
+
+}
+ul,ol{
+    font-size: 20px;
+}
+
+#id1{
+    color: green;
+}
+
+#id2{
+    color: blue;
+}
