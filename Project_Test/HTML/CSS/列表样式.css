@@ -1,0 +1,11 @@
+ul{
+    list-style-type: circle;
+    list-style-position:outside;
+    list-style-image: url("Image/preview.jpg");
+
+}
+
+
+ol{
+    list-style-type: lower-alpha;
+}

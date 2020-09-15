@@ -1,0 +1,23 @@
+p {
+    color: plum;
+    font-size: 30px;
+
+}
+
+.p1 {
+    color: orangered;
+    font-family: 隶书;
+}
+
+.p2 {
+    background-color: yellow;
+}
+
+/*内部样式表*/
+body {
+    /*background-color: aqua;*/
+    background-image: url("Image/preview.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+}

@@ -59,3 +59,27 @@ def login(username,password):
     else:
         print("login fail")
 login("imooc","123456")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

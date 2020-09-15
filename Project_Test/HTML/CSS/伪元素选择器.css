@@ -1,0 +1,30 @@
+p::before{
+    content: "略略略，哈哈哈，";
+}
+body::after{
+    content: "bushe";
+}
+/*第一行样式变化*/
+p::first-line{
+    background-color: blue;
+}
+
+/*第一个首字母*/
+p::first-letter{
+    background-color: red;
+    font-size: 30px;
+}
+
+/*选中的元素变化*/
+p::selection{
+    background-color: green;
+}
+h3::before{
+    content: "《";
+}
+h3::after{
+    content: "》";
+}
+h3::selection{
+    background-color: yellow;
+}

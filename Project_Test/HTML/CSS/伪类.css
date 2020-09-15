@@ -1,0 +1,32 @@
+p{
+    color: blue;
+    text-decoration: underline;
+}
+
+p:hover{
+    background-color: yellow;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+a:link{
+    color: aquamarine;
+}
+a:hover{
+    color: yellow;
+    font-size: 30px;
+}
+a:visited{
+    color: bisque;
+}
+a:active{
+    color: red;
+}
+
+input:hover{
+    background-color: yellow;
+}
+input:active{
+     background-color: plum;
+}
+

@@ -1,0 +1,24 @@
+
+p{
+/*对齐方式*/
+    direction: ltr;
+    /*字符间距*/
+    letter-spacing: 5px;
+    /*行高*/
+    line-height: 20px;
+    /*对齐方式*/
+    text-align: justify;
+    /*下划线*/
+    text-decoration:underline ;
+    /*上划线*/
+    text-decoration: overline;
+    /*中划线*/
+    /*text-decoration:line-through ;*/
+    /*阴影*/
+    text-shadow: 3px 3px 5px blue;
+    /*首字母大小写*/
+    text-transform: capitalize;
+    /*首行缩进*/
+    text-indent: 2em;
+}
+
