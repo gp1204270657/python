@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="application/javascript">
+        var flag=true
+        function checked1() {
+            var check=document.getElementsByName("check")
+            for(i=0;i<=check.length;i++){
+                check[i].checked=true
+            }
+
+        }
+         function checked2() {
+            var check=document.getElementsByName("check")
+            for(i=0;i<=check.length;i++){
+                check[i].checked=false
+            }
+
+        }
+
+
+
+
+    </script>
+</head>
+<body>
+<form>
+    <input type="checkbox" name="check" value="1"><label>洗澡</label>
+    <input type="checkbox" name="check" value="2"><label>游泳</label>
+    <input type="checkbox" name="check" value="3"><label>看书</label>
+    <input type="checkbox" name="check" value="4"><label>打游戏</label>
+    <input type="button" name="btn1" value="全选" onclick="checked1()">
+    <input type="button" name="btn2" value="全不选" onclick="checked2()">
+
+</form>
+
+</body>
+</html>
