@@ -3,8 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <script type="application/javascript">
+        function getDate() {
+            var date=new Date()
+            DATE=parseInt(date.getFullYear())
+            var yy=document.getElementById("yy");
+            var mm=document.getElementById("mm");
+            var dd=document.getElementById("dd");
+            getFor(yy,1999,DATE)
+            getFor(mm,1,12)
+            getFor(dd,1,31)
+            //将条目的长度设置为0.效果是删除
+          //  dd.options.length=0
+
+        }
+
+        function getFor(kwags,i,b) {
+            for(i;i<=b;i++){
+                kwags.options.add(new Option(i,i))
+            }
+        }
+        //切换月份展示对应的天数实现二级联动
+        function saveMonth() {
+            var yy=document.getElementById("yy");
+            var mm=document.getElementById("mm");
+            var dd=document.getElementById("dd");
+            var m=mm.value
+            var dayEnd
+            if(m==4 || m==6 ||m==9 || m==11){
+                dayEnd=30;
+            }else if (m==2){
+                dayEnd=28
+                var y=yy.value
+                //判断闰年
+                if((y % 4==0 && y %100 !=0) ||(y%400==0)){
+                    dayEnd=29
+                }
+            }else {
+                dayEnd=31
+            }
+            dd.options.length=0
+            getFor(dd,1,dayEnd)
+
+        }
+
+
+    </script>
 </head>
-<body>
+<body onload="getDate()">
+<form >
+    <select name="yy" id="yy" onchange="saveMonth()"> </select>年
+    <select name="mm" id="mm" onchange="saveMonth()"> </select>月
+    <select name="dd" id="dd" > </select>日
+    <input type="button" value="删除按钮框">
+
+</form>
 
 </body>
 </html>

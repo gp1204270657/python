@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #logoImg{
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+    <script type="application/javascript">
+        function initselect() {
+            var logo=document.getElementById("logo")
+            for(i=1;i<=2;i++){
+                logo.options.add(new Option(i,i))
+            }
+
+        }
+
+        function changeImg() {
+            var logo=document.getElementById("logo")
+
+            var n=logo.value
+            var logoImg=document.getElementById("logoImg")
+            logoImg.src="Image/"+n+".jpg"
+        }
+
+
+
+
+    </script>
+</head>
+<body onload="initselect()">
+ <img id="logoImg" src="Image/1.jpg">
+<select id="logo" onchange="changeImg()"> </select>
+
+</body>
+</html>
