@@ -60,7 +60,7 @@ def login(username,password):
         print("login fail")
 login("imooc","123456")
 
-
+print("test")
 
 
 

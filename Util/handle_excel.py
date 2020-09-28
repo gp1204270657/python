@@ -1,23 +1,21 @@
 #coding=utf-8
 import sys,os
 import openpyxl
-base_path=os.getcwd()
-sys.path.append(base_path)
-
-# open_excel=openpyxl.load_workbook(base_path+"/Case/imooc.xlsx")
-# sheet_name=open_excel.sheetnames
-# excel_value=open_excel[sheet_name[0]]
-# print(excel_value)
-# print(excel_value.cell(1,3).value)
-# print(excel_value.max_row)
+import configparser
 
 class HandelExcel:
+
+    def getinit(self,section,key):
+        cf=configparser.ConfigParser()
+        cf.read(r"F:\project\Config\server.ini")
+        data=cf.get(section,key)
+        return data
 
     def load_excel(self):
         '''
         加载excle
         '''
-        open_excel=openpyxl.load_workbook(r"E:\project_python\python\Case\imooc.xlsx")
+        open_excel=openpyxl.load_workbook(r"F:\project\Case\imooc.xlsx")
         return open_excel
     
     def get_sheet_data(self,index=None):
@@ -62,14 +60,15 @@ class HandelExcel:
         wr=wb.active
         #写进文件的位置
         wr.cell(row,clos,valus)
-        wb.save(base_path+"/Case/imooc.xlsx")
+        wb.save(r"F:\project\Case\imooc.xlsx")
 
 
 excel_data=HandelExcel()
 
 if __name__ == "__main__":
+    print(excel_data.getinit("server","base_path"))
     # print(excel_data.get_row_value(4))
-    print(excel_data.excel_write_Data(7,2,"tongguo"))
+    # print(excel_data.excel_write_Data(7,2,"tongguo"))
     # print(excel_data.get_cell_value(2,3))
     # print(rest)
 
