@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #f5f5f5;
+}
+.header{
+    top: 20px;
+    left: 50px;
+    position: relative;
+}
+
+.menu ul{
+    list-style: none;
+    display: none;
+    position: absolute;
+    opacity: 0.9;
+    background-color: white;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.menu li{
+    margin-top: 20px;
+}
+
+.logo{
+    float: left;
+}
+
+.menu{
+    float: left;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.login_title{
+    float: right;
+     margin-top: 10px;
+    margin-right: 50px;
+}
+.regis_title{
+    float: right;
+     margin-top: 10px;
+    margin-right: 120px;
+
+}
+.content{
+    margin-left: 50px;
+}
+
+.banner_img{
+    width: 96%;
+    height: 450px;
+    margin-top: 30px;
+}
+
+.image_shop ul li{
+    width: 480px;
+    float: left;
+    margin: 0 115px 60px 0;
+    list-style: none;
+    margin-top: 20px;
+    height: 480px;
+    box-shadow: 0 0 5px 3px #ccc;/*设置阴影*/
+    -webkit-box-shadow: 0 0 5px 3px #ccc;
+    -moz-box-shadow:0 0 5px 3px #ccc ;
+    background-color: #ffffff;
+}
+
+.btn{
+    width: 60px;
+    height: 30px;
+    background-color: red;
+    text-align: center;
+    border-radius: 5px;
+    float: right;
+    margin-top: 10px;
+}
+
+.img{
+    width: 50px;
+    height: 20px;
+    margin-top: 5px;
+
+}
+.image_content{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.image_content h3{
+    font-size: 25px;
+
+}
+
+.image_content p{
+    line-height: 25px;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.prive{
+    color: red;
+    font-size: 25px;
+    margin-top: 10px;
+    float: left;
+}
+
+.weiba{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+
+
+}
+.weiba ul{
+    width: 600px;
+    margin: auto;
+}
+.weiba ul li{
+    float: left;
+    margin-left: 30px;
+    list-style: none;
+    left: 500px;
+    margin-bottom: 20px;
+
+}
+.first_page{
+    border-radius: 50%;
+    background-color: #c5c5c5;
+    padding: 0px 20px;
+}
